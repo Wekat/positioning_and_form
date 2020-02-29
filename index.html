@@ -11,30 +11,33 @@
     <section class="screen">
         <div class="wrap">
             <div class="left">
-                <form action="">
+                <form class="form" action="">
                     <div class="card_info card_info__card_no">
-                        <label for="card_number">CARD NUMBER</label>
-                        <input class="card_number" type="text" placeholder="0000 0000 0000 0000">
+                        <label class="labels" for="card_number">CARD NUMBER</label><br>
+                        <input class="input input_long" id="card_number" type="number" autofocus required minlength="16" placeholder="0000 0000 0000 0000">
                     </div>
                     <div class="card_info card_info__backside">
                         <div class="mm_yy">
-                            <label for="date">MM/YY</label>
-                            <input class="date" type="text" placeholder="00/00">
+                            <label class="labels" for="date">MM/YY</label><br>
+                            <input class="input input_short" id="date" type="text" required placeholder="00/00">
                         </div>
                         <div class="cvv">
-                            <label for="cvv_code">CVV CODE</label>
-                            <input class="cvv_code" type="text" placeholder="000">
+                            <label class="labels" for="cvv_code">CVV CODE</label><br>
+                            <input class="input input_short" id="cvv_code" type="number" required maxlength="3" minlength="3" placeholder="000">
                         </div>
                     </div>
                     <div class="card_info card_info__name">
-                        <label for="name">CARDHOLDER FULL NAME</label>
-                        <input class="name" type="text" placeholder="Name Surname">
+                        <label class="labels" for="name">CARDHOLDER FULL NAME</label><br>
+                        <input class="input input_long" id="name" type="text" required placeholder="Name Surname">
                     </div>
-                    <button class="button">Pay now</button>
+                    <div class="button_segment">
+                        <button class="button" type="submit">Pay now</button>
+                    </div>
+                    
                 </form>
             </div>
             <div class="right">
-                <img src="images/flower.png" alt="flower">
+                <img class="flower" src="images/flower.png" alt="flower">
             </div>
             
         </div>
